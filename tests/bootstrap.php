@@ -5,6 +5,8 @@
  * @package AskQuote
  */
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals -- test bootstrap file, variables are test-scoped.
+
 // Determine WP test lib location: environment variable or common defaults.
 $_tests_dir = getenv( 'WP_TESTS_DIR' );
 
@@ -13,7 +15,8 @@ if ( ! $_tests_dir ) {
 }
 
 if ( ! file_exists( $_tests_dir . '/includes/functions.php' ) ) {
-	echo esc_html( 'Could not find WordPress test library at: ' . $_tests_dir ) . PHP_EOL; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo 'Could not find WordPress test library at: ' . esc_html( $_tests_dir ) . PHP_EOL;
 	echo 'Please run: bash bin/install-wp-tests.sh <db-name> <db-user> <db-pass> [db-host] [wp-version]' . PHP_EOL;
 	exit( 1 );
 }
@@ -24,7 +27,7 @@ require_once $_tests_dir . '/includes/functions.php';
 /**
  * Manually load the plugin being tested.
  */
-function _manually_load_plugin() {
+function _manually_load_plugin() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound
 	// Load WooCommerce first (must be active).
 	$wc_path = dirname( WP_PLUGIN_DIR ) . '/woocommerce/woocommerce.php';
 	if ( file_exists( $wc_path ) ) {

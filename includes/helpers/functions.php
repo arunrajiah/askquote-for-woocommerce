@@ -210,9 +210,8 @@ function askquote_get_quote_items( $quote_id ) {
 
 	// Table name is built from $wpdb->prefix — safe to use with esc_sql.
 	$safe_table = esc_sql( $table_name );
-	// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.InterpolatedNotPrepared
-	$items = $wpdb->get_results(
-		$wpdb->prepare( "SELECT * FROM `{$safe_table}` WHERE quote_id = %d ORDER BY id ASC", $quote_id )
+	$items      = $wpdb->get_results( // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+		$wpdb->prepare( "SELECT * FROM `{$safe_table}` WHERE quote_id = %d ORDER BY id ASC", $quote_id ) // phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 	);
 
 	return $items ? $items : array();
