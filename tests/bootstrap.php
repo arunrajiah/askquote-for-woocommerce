@@ -13,7 +13,7 @@ if ( ! $_tests_dir ) {
 }
 
 if ( ! file_exists( $_tests_dir . '/includes/functions.php' ) ) {
-	echo 'Could not find WordPress test library at: ' . $_tests_dir . PHP_EOL;
+	echo esc_html( 'Could not find WordPress test library at: ' . $_tests_dir ) . PHP_EOL; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	echo 'Please run: bash bin/install-wp-tests.sh <db-name> <db-user> <db-pass> [db-host] [wp-version]' . PHP_EOL;
 	exit( 1 );
 }

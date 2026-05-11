@@ -18,10 +18,12 @@ class Askquote_I18n {
 	 * @return void
 	 */
 	public function load_plugin_textdomain() {
+		// load_plugin_textdomain is still needed for local/non-.org installs.
+		// phpcs:ignore PluginCheck.CodeAnalysis.DiscouragedFunctions.load_plugin_textdomainFound
 		load_plugin_textdomain(
 			'askquote-for-woocommerce',
 			false,
-			ASKQUOTE_PLUGIN_DIR . 'languages'
+			dirname( plugin_basename( ASKQUOTE_PLUGIN_DIR ) ) . '/languages'
 		);
 	}
 }

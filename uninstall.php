@@ -32,8 +32,9 @@ if ( $quote_ids ) {
 }
 
 // Drop custom table.
-$table_name = $wpdb->prefix . 'askquote_quote_items';
-$wpdb->query( "DROP TABLE IF EXISTS {$table_name}" ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.InterpolatedNotPrepared
+$table_name      = $wpdb->prefix . 'askquote_quote_items';
+$safe_table_name = esc_sql( $table_name );
+$wpdb->query( "DROP TABLE IF EXISTS `{$safe_table_name}`" ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 
 // Delete plugin options.
 delete_option( 'askquote_settings' );

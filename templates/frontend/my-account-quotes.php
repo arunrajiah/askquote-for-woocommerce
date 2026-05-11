@@ -7,6 +7,8 @@
  */
 
 defined( 'ABSPATH' ) || exit;
+
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound,WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- template variables and WC hook calls.
 ?>
 <div class="askquote-my-account-quotes">
 	<?php if ( empty( $quotes ) ) : ?>

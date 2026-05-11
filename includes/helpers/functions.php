@@ -208,12 +208,11 @@ function askquote_get_quote_items( $quote_id ) {
 	$quote_id   = absint( $quote_id );
 	$table_name = $wpdb->prefix . 'askquote_quote_items';
 
-	// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+	// Table name is built from $wpdb->prefix — safe to use with esc_sql.
+	$safe_table = esc_sql( $table_name );
+	// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 	$items = $wpdb->get_results(
-		$wpdb->prepare(
-			"SELECT * FROM {$table_name} WHERE quote_id = %d ORDER BY id ASC", // phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared
-			$quote_id
-		)
+		$wpdb->prepare( "SELECT * FROM `{$safe_table}` WHERE quote_id = %d ORDER BY id ASC", $quote_id )
 	);
 
 	return $items ? $items : array();
