@@ -1,0 +1,25 @@
+name: Deploy to WordPress.org
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # Guard: only run if SVN credentials are configured.
+    if: ${{ secrets.SVN_USERNAME != '' }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: WordPress Plugin Deploy
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        env:
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SLUG: askquote-for-woocommerce
+          BUILD_DIR: ./askquote-for-woocommerce
+          ASSETS_DIR: .wordpress-org

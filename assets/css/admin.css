@@ -1,0 +1,71 @@
+/**
+ * AskQuote for WooCommerce — Admin Styles
+ *
+ * @package AskQuote
+ */
+
+/* ============================================================
+   Status Badge
+   ============================================================ */
+
+.askquote-status-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+/* ============================================================
+   Quote List Table
+   ============================================================ */
+
+.wp-list-table.quotes .column-id {
+	width: 80px;
+}
+
+.wp-list-table.quotes .column-status {
+	width: 110px;
+}
+
+.wp-list-table.quotes .column-date {
+	width: 130px;
+}
+
+.wp-list-table.quotes .column-products {
+	width: 100px;
+}
+
+/* ============================================================
+   Meta Box
+   ============================================================ */
+
+.askquote-meta-box h3 {
+	font-size: 14px;
+	margin: 16px 0 8px;
+	padding: 0;
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 4px;
+}
+
+.askquote-meta-box h3:first-child {
+	margin-top: 0;
+}
+
+.askquote-meta-box .form-table {
+	margin-top: 0;
+}
+
+/* ============================================================
+   Settings Page
+   ============================================================ */
+
+.askquote-warning {
+	color: #c62d2d;
+}
+
+.askquote-advanced-notice .button-dismiss {
+	cursor: pointer;
+}

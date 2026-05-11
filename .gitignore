@@ -1,0 +1,9 @@
+/vendor/
+/node_modules/
+*.log
+.DS_Store
+*.zip
+/languages/*.mo
+/.phpunit.cache/
+/.phpunit.result.cache
+/coverage/

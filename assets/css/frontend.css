@@ -1,0 +1,179 @@
+/**
+ * AskQuote for WooCommerce — Frontend Styles
+ *
+ * @package AskQuote
+ */
+
+/* ============================================================
+   Quote Button
+   ============================================================ */
+
+.askquote-btn {
+	display: inline-block;
+	margin-top: 8px;
+	cursor: pointer;
+}
+
+.askquote-btn.loading {
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+/* Mini badge shown in nav / header */
+.askquote-count-badge {
+	display: inline-block;
+	background: #cc0000;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 11px;
+	line-height: 18px;
+	min-width: 18px;
+	text-align: center;
+	padding: 0 4px;
+	margin-left: 4px;
+}
+
+/* ============================================================
+   Quote Cart
+   ============================================================ */
+
+.askquote-cart-wrapper {
+	margin-top: 20px;
+}
+
+.askquote-cart-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.askquote-cart-table th,
+.askquote-cart-table td {
+	padding: 10px 12px;
+	text-align: left;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.askquote-cart-table .product-remove {
+	text-align: center;
+	width: 60px;
+}
+
+.askquote-cart-table .product-quantity {
+	width: 120px;
+}
+
+.askquote-remove-item {
+	background: none;
+	border: none;
+	color: #cc0000;
+	font-size: 18px;
+	cursor: pointer;
+	padding: 0;
+	line-height: 1;
+}
+
+.askquote-remove-item:hover {
+	color: #990000;
+}
+
+.askquote-qty-input {
+	width: 60px;
+}
+
+.askquote-cart-actions {
+	margin-top: 16px;
+}
+
+.askquote-cart-empty {
+	font-style: italic;
+	color: #777;
+}
+
+/* ============================================================
+   Quote Form
+   ============================================================ */
+
+.askquote-form-wrapper {
+	max-width: 680px;
+}
+
+.askquote-cart-summary {
+	background: #f8f8f8;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	padding: 14px 18px;
+	margin-bottom: 20px;
+}
+
+.askquote-cart-summary h3 {
+	margin-top: 0;
+}
+
+.askquote-cart-summary ul {
+	margin: 0;
+	padding-left: 18px;
+}
+
+.askquote-form .form-row {
+	margin-bottom: 14px;
+}
+
+.askquote-form label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+.askquote-form .input-text,
+.askquote-form textarea {
+	width: 100%;
+	max-width: 480px;
+	box-sizing: border-box;
+}
+
+.askquote-success {
+	padding: 12px 16px;
+	background: #e7f7e7;
+	border: 1px solid #4caf50;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	color: #256029;
+}
+
+.askquote-notice {
+	font-style: italic;
+	color: #777;
+}
+
+/* ============================================================
+   My Account Quotes
+   ============================================================ */
+
+.askquote-status {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.askquote-status.askquote-status-aq-pending {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.askquote-status.askquote-status-aq-replied {
+	background: #d1ecf1;
+	color: #0c5460;
+}
+
+.askquote-status.askquote-status-aq-approved {
+	background: #d4edda;
+	color: #155724;
+}
+
+.askquote-status.askquote-status-aq-closed {
+	background: #f8d7da;
+	color: #721c24;
+}
