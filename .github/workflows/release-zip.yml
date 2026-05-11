@@ -1,0 +1,36 @@
+name: Build Release ZIP
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+permissions:
+  contents: write  # needed to upload release assets
+
+jobs:
+  build-zip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build plugin ZIP
+        # git archive respects .gitattributes export-ignore rules automatically,
+        # so dev files (tests/, bin/, phpcs.xml.dist, etc.) are excluded.
+        # --prefix ensures the zip extracts to askquote-for-woocommerce/ folder.
+        run: |
+          git archive \
+            --worktree-attributes \
+            --format=zip \
+            --prefix=askquote-for-woocommerce/ \
+            HEAD \
+            -o askquote-for-woocommerce.zip
+
+      - name: Upload ZIP to GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload "${{ github.ref_name }}" askquote-for-woocommerce.zip \
+            --clobber
