@@ -139,6 +139,8 @@ class Askquote {
 		// Emails.
 		$email_manager = new Askquote_Email_Manager();
 		$this->loader->add_filter( 'woocommerce_email_classes', $email_manager, 'add_emails' );
+		// Fire approval email on any status transition to aq-approved (meta box, REST, WP-CLI, etc.).
+		$this->loader->add_action( 'askquote_quote_status_changed', 'Askquote_Email_Manager', 'on_status_changed', 10, 3 );
 	}
 
 	/**

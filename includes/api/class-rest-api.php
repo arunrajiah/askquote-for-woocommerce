@@ -206,10 +206,8 @@ class Askquote_REST_API extends WP_REST_Controller {
 			return new WP_Error( 'status_update_failed', __( 'Could not update quote status.', 'askquote-for-woocommerce' ), array( 'status' => 500 ) );
 		}
 
-		// If approved, send approval email.
-		if ( 'aq-approved' === $new_status ) {
-			Askquote_Email_Manager::send_customer_quote_approved( $quote_id );
-		}
+		// Approval email is sent via the askquote_quote_status_changed action
+		// in Askquote_Email_Manager::on_status_changed() — no direct call needed here.
 
 		$quote = askquote_get_quote( $quote_id );
 		return new WP_REST_Response( $this->prepare_quote_for_response( $quote ), 200 );

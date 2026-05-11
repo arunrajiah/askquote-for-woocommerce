@@ -68,4 +68,20 @@ class Askquote_Email_Manager {
 			$emails['Askquote_Email_Customer_Quote_Approved']->trigger( $quote_id );
 		}
 	}
+
+	/**
+	 * Listen to status transitions and fire the approval email when a quote is approved.
+	 * Hooked to askquote_quote_status_changed so any code path (admin meta box, REST API,
+	 * WP-CLI, etc.) triggers the email — not just the REST API.
+	 *
+	 * @param int    $quote_id   Quote post ID.
+	 * @param string $old_status Previous status slug.
+	 * @param string $new_status New status slug.
+	 * @return void
+	 */
+	public static function on_status_changed( $quote_id, $old_status, $new_status ) {
+		if ( 'aq-approved' === $new_status && $old_status !== $new_status ) {
+			self::send_customer_quote_approved( $quote_id );
+		}
+	}
 }
