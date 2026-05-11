@@ -19,6 +19,11 @@ class Askquote_Email_Manager {
 	 * @return array Modified email classes.
 	 */
 	public function add_emails( $email_classes ) {
+		// Load email classes here so WC_Email is already defined when the files are included.
+		require_once ASKQUOTE_PLUGIN_DIR . 'includes/emails/class-customer-quote-received.php';
+		require_once ASKQUOTE_PLUGIN_DIR . 'includes/emails/class-admin-quote-submitted.php';
+		require_once ASKQUOTE_PLUGIN_DIR . 'includes/emails/class-customer-quote-approved.php';
+
 		$email_classes['Askquote_Email_Customer_Quote_Received'] = new Askquote_Email_Customer_Quote_Received();
 		$email_classes['Askquote_Email_Admin_Quote_Submitted']   = new Askquote_Email_Admin_Quote_Submitted();
 		$email_classes['Askquote_Email_Customer_Quote_Approved'] = new Askquote_Email_Customer_Quote_Approved();

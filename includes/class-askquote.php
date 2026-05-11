@@ -91,11 +91,8 @@ class Askquote {
 		require_once ASKQUOTE_PLUGIN_DIR . 'includes/frontend/class-quote-form.php';
 		require_once ASKQUOTE_PLUGIN_DIR . 'includes/frontend/class-quote-page.php';
 
-		// Emails.
+		// Email manager (individual email classes are loaded lazily inside add_emails()).
 		require_once ASKQUOTE_PLUGIN_DIR . 'includes/emails/class-email-manager.php';
-		require_once ASKQUOTE_PLUGIN_DIR . 'includes/emails/class-customer-quote-received.php';
-		require_once ASKQUOTE_PLUGIN_DIR . 'includes/emails/class-admin-quote-submitted.php';
-		require_once ASKQUOTE_PLUGIN_DIR . 'includes/emails/class-customer-quote-approved.php';
 
 		// REST API.
 		require_once ASKQUOTE_PLUGIN_DIR . 'includes/api/class-rest-api.php';
