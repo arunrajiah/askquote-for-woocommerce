@@ -1,0 +1,41 @@
+name: Update Translation Template
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  make-pot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Fetch with a token so we can push the updated .pot back.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install WP-CLI
+        run: |
+          curl -sSL https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o wp-cli.phar
+          chmod +x wp-cli.phar
+          sudo mv wp-cli.phar /usr/local/bin/wp
+          wp --info
+
+      - name: Generate .pot file
+        run: |
+          wp i18n make-pot . languages/askquote-for-woocommerce.pot \
+            --slug=askquote-for-woocommerce \
+            --domain=askquote-for-woocommerce \
+            --exclude=tests,bin,vendor,node_modules \
+            --package-name="AskQuote for WooCommerce" \
+            --allow-root
+
+      - name: Commit updated .pot file
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add languages/askquote-for-woocommerce.pot
+          git diff --cached --quiet || git commit -m "i18n: update translation template for ${{ github.ref_name }}"
+          git push origin HEAD:main

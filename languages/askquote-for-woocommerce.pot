@@ -1,0 +1,803 @@
+# AskQuote for WooCommerce - Translation Template
+# Copyright (C) 2026 Arun Rajiah
+# This file is distributed under the same license as the AskQuote for WooCommerce package.
+# Arun Rajiah <arunrajiah@gmail.com>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AskQuote for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://hub.arunrajiah.com/support\n"
+"POT-Creation-Date: 2026-05-12 01:17+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#. translators: %d: number of items
+#: includes/admin/class-quote-list-table.php:267
+#: templates/frontend/my-account-quotes.php:49
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-quote-meta-box.php:85
+msgid "(No message)"
+msgstr ""
+
+#: includes/admin/class-quote-list-table.php:243
+msgid "(Unknown)"
+msgstr ""
+
+#. translators: %s: customer name
+#: templates/emails/html/admin-quote-submitted.php:18
+#: templates/emails/plain/admin-quote-submitted.php:16
+#, php-format
+msgid "A new quote request has been submitted by %s."
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:26
+msgctxt "quote"
+msgid "Add New"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:27
+msgid "Add New Quote"
+msgstr ""
+
+#: includes/frontend/class-quote-button.php:42
+msgid "Added to quote!"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:78
+msgid "Admin Notification Email"
+msgstr ""
+
+#: includes/admin/class-quote-meta-box.php:131
+msgid "Admin Reply"
+msgstr ""
+
+#: includes/helpers/class-quote-status.php:34
+msgid "Admin has replied to the quote request."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:267
+msgid "Admin receives new quote submission notifications at this address."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:154
+msgid ""
+"Advanced features are available separately, including bulk quote export, "
+"custom pricing rules, and more. Visit our website to learn more."
+msgstr ""
+
+#: includes/admin/class-quote-list-table.php:89
+msgid "All"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:209
+msgid "All Products"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:31
+msgid "All Quotes"
+msgstr ""
+
+#: includes/helpers/class-quote-status.php:38
+msgid "Approved"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:106
+msgctxt "quote status"
+msgid "Approved"
+msgstr ""
+
+#: templates/emails/plain/customer-quote-approved.php:22
+msgid "Approved Products"
+msgstr ""
+
+#: templates/emails/html/customer-quote-approved.php:25
+msgid "Approved Quote Details"
+msgstr ""
+
+#: includes/admin/class-admin.php:85
+msgid "Are you sure you want to change this quote's status?"
+msgstr ""
+
+#: includes/admin/class-admin.php:86
+msgid ""
+"Are you sure you want to delete the selected quotes? This cannot be undone."
+msgstr ""
+
+#: includes/admin/class-admin.php:116 includes/admin/class-admin.php:117
+msgid "AskQuote"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:126
+msgid "AskQuote Settings"
+msgstr ""
+
+#. translators: %s: WooCommerce plugin name
+#: askquote-for-woocommerce.php:60
+#, php-format
+msgid "AskQuote for WooCommerce requires %s to be installed and active."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:62
+msgid "Button Color"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:54
+msgid "Button Label"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:46
+msgid "Button Visibility"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:210
+msgid "By Category"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:211
+msgid "By Tag"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:220
+msgid "Choose on which products the quote button appears."
+msgstr ""
+
+#: includes/helpers/class-quote-status.php:43
+msgid "Closed"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:119
+msgctxt "quote status"
+msgid "Closed"
+msgstr ""
+
+#: includes/admin/class-quote-meta-box.php:76
+#: includes/frontend/class-quote-form.php:63
+#: templates/emails/html/admin-quote-submitted.php:43
+msgid "Company"
+msgstr ""
+
+#. translators: %s: company name
+#: templates/emails/plain/admin-quote-submitted.php:35
+#, php-format
+msgid "Company: %s"
+msgstr ""
+
+#: includes/frontend/class-quote-cart.php:162
+msgid "Could not add product to quote."
+msgstr ""
+
+#: includes/frontend/class-quote-cart.php:224
+msgid "Could not update item quantity."
+msgstr ""
+
+#: includes/api/class-rest-api.php:206
+msgid "Could not update quote status."
+msgstr ""
+
+#: includes/admin/class-quote-list-table.php:41
+msgid "Customer"
+msgstr ""
+
+#: templates/emails/html/admin-quote-submitted.php:24
+#: templates/emails/plain/admin-quote-submitted.php:21
+msgid "Customer Details"
+msgstr ""
+
+#: includes/admin/class-quote-meta-box.php:52
+msgid "Customer Information"
+msgstr ""
+
+#: includes/admin/class-quote-meta-box.php:84
+#: templates/emails/html/admin-quote-submitted.php:75
+#: templates/emails/plain/admin-quote-submitted.php:49
+msgid "Customer Message"
+msgstr ""
+
+#: includes/helpers/functions.php:85
+msgid "Customer name and email are required."
+msgstr ""
+
+#: includes/admin/class-quote-list-table.php:45
+#: templates/frontend/my-account-quotes.php:21
+msgid "Date"
+msgstr ""
+
+#: includes/admin/class-quote-list-table.php:70
+#: includes/admin/class-quote-list-table.php:228
+msgid "Delete"
+msgstr ""
+
+#: includes/admin/class-quote-list-table.php:228
+msgid "Delete this quote?"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:103
+msgid "Display Settings"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:29
+msgid "Edit Quote"
+msgstr ""
+
+#: includes/admin/class-quote-list-table.php:42
+#: includes/admin/class-quote-meta-box.php:62
+#: templates/emails/html/admin-quote-submitted.php:32
+msgid "Email"
+msgstr ""
+
+#: includes/frontend/class-quote-form.php:51
+msgid "Email Address"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:71
+msgid "Email Settings"
+msgstr ""
+
+#. translators: %s: customer email address
+#: templates/emails/plain/admin-quote-submitted.php:25
+#, php-format
+msgid "Email: %s"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:46
+msgid "Filter quotes list"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:39
+msgid "General Settings"
+msgstr ""
+
+#: templates/emails/plain/customer-quote-approved.php:20
+msgid "Great news! Your quote request has been approved."
+msgstr ""
+
+#: templates/emails/html/customer-quote-approved.php:23
+msgid ""
+"Great news! Your quote request has been approved. Please see the details "
+"below."
+msgstr ""
+
+#. translators: %s: customer name
+#: templates/emails/html/customer-quote-approved.php:18
+#: templates/emails/html/customer-quote-received.php:21
+#: templates/emails/plain/customer-quote-approved.php:16
+#: templates/emails/plain/customer-quote-received.php:16
+#, php-format
+msgid "Hi %s,"
+msgstr ""
+
+#: includes/admin/class-quote-list-table.php:40
+msgid "ID"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:42
+msgid "Insert into quote"
+msgstr ""
+
+#: includes/helpers/functions.php:89
+msgid "Invalid customer email address."
+msgstr ""
+
+#: includes/frontend/class-quote-cart.php:187
+#: includes/frontend/class-quote-cart.php:218
+msgid "Invalid item key."
+msgstr ""
+
+#: includes/frontend/class-quote-cart.php:156
+msgid "Invalid product."
+msgstr ""
+
+#. translators: %s: invalid status value
+#: includes/api/class-rest-api.php:270
+#, php-format
+msgid "Invalid status: %s"
+msgstr ""
+
+#: includes/frontend/class-quote-cart.php:193
+msgid "Item not found in quote cart."
+msgstr ""
+
+#: includes/frontend/class-quote-cart.php:199
+msgid "Item removed from quote cart."
+msgstr ""
+
+#: templates/frontend/my-account-quotes.php:23
+msgid "Items"
+msgstr ""
+
+#: templates/frontend/quote-form.php:23
+msgid "Items in Your Quote"
+msgstr ""
+
+#: includes/frontend/class-quote-form.php:48
+msgid "John Smith"
+msgstr ""
+
+#: includes/admin/class-quote-list-table.php:69
+msgid "Mark as Closed"
+msgstr ""
+
+#: includes/admin/class-quote-list-table.php:68
+msgid "Mark as Replied"
+msgstr ""
+
+#: includes/frontend/class-quote-form.php:69
+msgid "Message"
+msgstr ""
+
+#: templates/emails/html/customer-quote-approved.php:51
+#: templates/emails/plain/customer-quote-approved.php:32
+msgid "Message from Us"
+msgstr ""
+
+#: includes/frontend/class-quote-page.php:72
+msgid "My Quotes"
+msgstr ""
+
+#: includes/admin/class-quote-meta-box.php:55
+#: templates/emails/html/admin-quote-submitted.php:28
+msgid "Name"
+msgstr ""
+
+#. translators: %s: customer full name
+#: templates/emails/plain/admin-quote-submitted.php:23
+#, php-format
+msgid "Name: %s"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:28
+msgid "New Quote"
+msgstr ""
+
+#: includes/emails/class-admin-quote-submitted.php:32
+#: includes/emails/class-admin-quote-submitted.php:128
+msgid "New Quote Request"
+msgstr ""
+
+#: includes/emails/class-admin-quote-submitted.php:20
+msgid "New Quote Submitted (Admin)"
+msgstr ""
+
+#: includes/emails/class-admin-quote-submitted.php:31
+#: includes/emails/class-admin-quote-submitted.php:119
+msgid "New quote request received — {site_title}"
+msgstr ""
+
+#: includes/admin/class-quote-meta-box.php:119
+msgid "No items found."
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:35
+msgid "No quotes found in Trash."
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:34
+msgid "No quotes found."
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:33
+msgid "Parent Quotes:"
+msgstr ""
+
+#: includes/helpers/class-quote-status.php:28
+msgid "Pending"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:80
+msgctxt "quote status"
+msgid "Pending"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:212
+msgid "Per Product (manual)"
+msgstr ""
+
+#: includes/admin/class-quote-meta-box.php:69
+#: templates/emails/html/admin-quote-submitted.php:37
+msgid "Phone"
+msgstr ""
+
+#: includes/frontend/class-quote-form.php:57
+msgid "Phone Number"
+msgstr ""
+
+#. translators: %s: customer phone number
+#: templates/emails/plain/admin-quote-submitted.php:30
+#, php-format
+msgid "Phone: %s"
+msgstr ""
+
+#: includes/frontend/class-quote-page.php:89
+msgid "Please log in to view your quotes."
+msgstr ""
+
+#: includes/admin/class-quote-meta-box.php:92
+#: templates/emails/html/admin-quote-submitted.php:54
+#: templates/emails/html/customer-quote-approved.php:30
+#: templates/emails/html/customer-quote-received.php:33
+#: templates/frontend/quote-cart.php:20
+msgid "Product"
+msgstr ""
+
+#. translators: %d: product ID
+#: includes/admin/class-quote-meta-box.php:108
+#, php-format
+msgid "Product #%d (deleted)"
+msgstr ""
+
+#: includes/frontend/class-quote-cart.php:169
+msgid "Product added to quote cart."
+msgstr ""
+
+#: includes/admin/class-quote-list-table.php:43
+msgid "Products"
+msgstr ""
+
+#: includes/admin/class-quote-meta-box.php:94
+#: templates/emails/html/admin-quote-submitted.php:55
+#: templates/emails/html/customer-quote-approved.php:31
+#: templates/emails/html/customer-quote-received.php:34
+msgid "Qty"
+msgstr ""
+
+#: templates/frontend/quote-cart.php:21 templates/frontend/quote-cart.php:43
+msgid "Quantity"
+msgstr ""
+
+#: includes/frontend/class-quote-cart.php:230
+msgid "Quantity updated."
+msgstr ""
+
+#: includes/admin/class-quote-list-table.php:25
+msgid "Quote"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:25
+msgctxt "add new on admin bar"
+msgid "Quote"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:23
+msgctxt "post type singular name"
+msgid "Quote"
+msgstr ""
+
+#: templates/frontend/my-account-quotes.php:20
+msgid "Quote #"
+msgstr ""
+
+#: includes/emails/class-customer-quote-approved.php:21
+msgid "Quote Approved"
+msgstr ""
+
+#: includes/admin/class-quote-meta-box.php:23
+msgid "Quote Details"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:36
+msgid "Quote Image"
+msgstr ""
+
+#: includes/emails/class-customer-quote-received.php:21
+msgid "Quote Received"
+msgstr ""
+
+#: includes/emails/class-customer-quote-received.php:37
+#: includes/emails/class-customer-quote-received.php:133
+msgid "Quote Request Received"
+msgstr ""
+
+#: includes/admin/class-quote-meta-box.php:122
+msgid "Quote Status"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:40
+msgid "Quote archives"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:41
+msgid "Quote attributes"
+msgstr ""
+
+#. translators: %s: customer name
+#: includes/helpers/functions.php:104
+#, php-format
+msgid "Quote from %s"
+msgstr ""
+
+#: includes/helpers/class-quote-status.php:39
+msgid "Quote has been approved."
+msgstr ""
+
+#: includes/helpers/class-quote-status.php:44
+msgid "Quote has been closed without approval."
+msgstr ""
+
+#: includes/helpers/functions.php:93
+msgid "Quote must contain at least one item."
+msgstr ""
+
+#: includes/api/class-rest-api.php:183 includes/api/class-rest-api.php:201
+msgid "Quote not found."
+msgstr ""
+
+#. translators: %s: quote ID
+#: templates/emails/html/customer-quote-approved.php:59
+#: templates/emails/plain/customer-quote-approved.php:39
+#: templates/emails/plain/customer-quote-received.php:40
+#, php-format
+msgid "Quote reference: #%s"
+msgstr ""
+
+#: includes/helpers/class-quote-status.php:29
+msgid "Quote request received, awaiting response."
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:51
+msgid "Quote requests submitted by customers."
+msgstr ""
+
+#: includes/admin/class-admin.php:99 includes/admin/class-admin.php:161
+#: includes/admin/class-quote-list-table.php:26
+msgid "Quotes"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:24
+msgctxt "admin menu"
+msgid "Quotes"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:22
+msgctxt "post type general name"
+msgid "Quotes"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:44
+msgid "Quotes list"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:45
+msgid "Quotes list navigation"
+msgstr ""
+
+#: templates/frontend/quote-cart.php:22
+msgid "Remove"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:110
+msgid "Remove Data on Uninstall"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:314
+msgid "Remove all plugin data when the plugin is uninstalled."
+msgstr ""
+
+#: templates/frontend/quote-cart.php:61
+msgid "Remove item"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:38
+msgid "Remove quote image"
+msgstr ""
+
+#: includes/helpers/class-quote-status.php:33
+msgid "Replied"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:93
+msgctxt "quote status"
+msgid "Replied"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:189
+#: includes/admin/class-settings-page.php:230
+#: includes/class-askquote-activator.php:70
+#: includes/frontend/class-quote-button.php:121
+msgid "Request Quote"
+msgstr ""
+
+#: includes/admin/class-quote-meta-box.php:87
+#: templates/emails/html/admin-quote-submitted.php:50
+#: templates/emails/plain/admin-quote-submitted.php:38
+msgid "Requested Products"
+msgstr ""
+
+#: includes/admin/class-quote-meta-box.php:93
+msgid "SKU"
+msgstr ""
+
+#: includes/admin/class-admin.php:167
+#: includes/post-types/class-quote-cpt.php:32
+msgid "Search Quotes"
+msgstr ""
+
+#: includes/frontend/class-quote-cart.php:148
+#: includes/frontend/class-quote-cart.php:181
+#: includes/frontend/class-quote-cart.php:211
+msgid "Security check failed."
+msgstr ""
+
+#: includes/frontend/class-quote-form.php:122
+msgid "Security check failed. Please try again."
+msgstr ""
+
+#: includes/emails/class-admin-quote-submitted.php:21
+msgid "Sent to the admin when a new quote request is received."
+msgstr ""
+
+#: includes/emails/class-customer-quote-approved.php:22
+msgid "Sent to the customer when their quote is approved."
+msgstr ""
+
+#: includes/emails/class-customer-quote-received.php:22
+msgid "Sent to the customer when their quote request is received."
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:37
+msgid "Set quote image"
+msgstr ""
+
+#: includes/admin/class-admin.php:105
+msgid "Settings"
+msgstr ""
+
+#: includes/frontend/class-quote-button.php:43
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: includes/admin/class-quote-list-table.php:44
+#: templates/frontend/my-account-quotes.php:22
+msgid "Status"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:94
+msgid "Subject: Quote Approved"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:86
+msgid "Subject: Quote Received"
+msgstr ""
+
+#: templates/frontend/quote-cart.php:76 templates/frontend/quote-form.php:73
+msgid "Submit Quote Request"
+msgstr ""
+
+#: includes/frontend/class-quote-form.php:72
+msgid "Tell us more about your requirements..."
+msgstr ""
+
+#: templates/emails/html/customer-quote-received.php:26
+#: templates/emails/plain/customer-quote-received.php:20
+msgid ""
+"Thank you for your quote request. We have received it and will get back to "
+"you shortly."
+msgstr ""
+
+#: includes/admin/class-quote-meta-box.php:133
+msgid "This reply may be included in the email sent to the customer."
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:43
+msgid "Uploaded to this quote"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:39
+msgid "Use as quote image"
+msgstr ""
+
+#: includes/admin/class-quote-list-table.php:222
+msgid "View / Edit"
+msgstr ""
+
+#: includes/post-types/class-quote-cpt.php:30
+msgid "View Quote"
+msgstr ""
+
+#: templates/emails/html/admin-quote-submitted.php:81
+msgid "View Quote in Admin"
+msgstr ""
+
+#. translators: %s: URL to the quote in WP admin
+#: templates/emails/plain/admin-quote-submitted.php:56
+#, php-format
+msgid "View quote in admin: %s"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:316
+msgid "Warning: This will permanently delete all quotes and settings."
+msgstr ""
+
+#: includes/admin/class-admin.php:154 includes/admin/class-admin.php:182
+msgid "You do not have permission to access this page."
+msgstr ""
+
+#: templates/frontend/my-account-quotes.php:15
+msgid "You have not submitted any quote requests yet."
+msgstr ""
+
+#: templates/frontend/quote-form.php:39
+msgid "Your Details"
+msgstr ""
+
+#: templates/emails/html/customer-quote-received.php:57
+#: templates/emails/plain/customer-quote-received.php:33
+msgid "Your Message"
+msgstr ""
+
+#: includes/frontend/class-quote-form.php:45
+msgid "Your Name"
+msgstr ""
+
+#: templates/emails/html/customer-quote-received.php:28
+#: templates/emails/plain/customer-quote-received.php:22
+msgid "Your Quote Details"
+msgstr ""
+
+#: includes/emails/class-customer-quote-approved.php:36
+#: includes/emails/class-customer-quote-approved.php:134
+msgid "Your Quote Has Been Approved"
+msgstr ""
+
+#: templates/frontend/quote-cart.php:15
+msgid "Your quote cart is empty."
+msgstr ""
+
+#: includes/frontend/class-quote-form.php:130
+msgid "Your quote cart is empty. Please add products first."
+msgstr ""
+
+#: templates/frontend/quote-form.php:17
+msgid ""
+"Your quote cart is empty. Please add products to your quote cart before "
+"submitting."
+msgstr ""
+
+#: includes/admin/class-settings-page.php:292
+#: includes/class-askquote-activator.php:74
+msgid "Your quote has been approved"
+msgstr ""
+
+#: includes/emails/class-customer-quote-approved.php:34
+#: includes/emails/class-customer-quote-approved.php:125
+msgid "Your quote has been approved — {site_title}"
+msgstr ""
+
+#. translators: %s: quote ID
+#: templates/emails/html/customer-quote-received.php:65
+#, php-format
+msgid "Your quote reference number is: #%s"
+msgstr ""
+
+#: includes/admin/class-settings-page.php:277
+#: includes/class-askquote-activator.php:73
+msgid "Your quote request has been received"
+msgstr ""
+
+#: includes/emails/class-customer-quote-received.php:35
+#: includes/emails/class-customer-quote-received.php:124
+msgid "Your quote request has been received — {site_title}"
+msgstr ""
+
+#: includes/frontend/class-quote-form.php:87
+msgid "Your quote request has been submitted. We will be in touch shortly."
+msgstr ""
+
+#: includes/frontend/class-quote-form.php:54
+msgid "john@example.com"
+msgstr ""
+
+#: templates/frontend/quote-form.php:45
+msgid "required"
+msgstr ""
