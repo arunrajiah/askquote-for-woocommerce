@@ -98,12 +98,15 @@ Those are part of [AskQuote Pro](https://hub.arunrajiah.com/products/askquote-pr
 
 ## ⚡ AskQuote Pro
 
-The free plugin handles the core workflow. **[AskQuote Pro](https://hub.arunrajiah.com/products/askquote-pro)** adds:
+The free plugin handles the core quoting workflow. **[AskQuote Pro](https://hub.arunrajiah.com/products/askquote-pro)** ($49 one-time) adds B2B-grade features:
 
-- PDF quote generation with your branding
-- Price negotiation (admin counter-offers)
-- Quote expiry dates
-- Priority support
+- Wholesale roles & tiered pricing rules
+- Bulk order form with CSV import
+- Net-30 checkout & invoice generation
+- B2B registration with approval workflow
+- Tax exemption management
+- Quote templates for fast replies
+- Priority email support · 1-year updates
 
 ---
 
