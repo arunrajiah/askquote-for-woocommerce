@@ -3,10 +3,10 @@ Contributors: arunrajiah
 Tags: woocommerce, quote, request-a-quote, b2b, wholesale
 Requires at least: 6.2
 Tested up to: 6.9
-Stable tag: 0.1.0
+Stable tag: 1.0.0
 Requires PHP: 7.4
 WC requires at least: 7.0
-WC tested up to: 8.5
+WC tested up to: 9.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,7 +96,7 @@ Advanced features are available separately at [hub.arunrajiah.com/askquote](http
 
 == Changelog ==
 
-= 0.1.0 =
+= 1.0.0 =
 * Initial release.
 * Quote button on products with configurable visibility.
 * Session-based quote cart.
@@ -109,5 +109,5 @@ Advanced features are available separately at [hub.arunrajiah.com/askquote](http
 
 == Upgrade Notice ==
 
-= 0.1.0 =
+= 1.0.0 =
 Initial release — no upgrade needed.

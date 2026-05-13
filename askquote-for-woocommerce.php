@@ -3,7 +3,7 @@
  * Plugin Name: AskQuote for WooCommerce
  * Plugin URI: https://hub.arunrajiah.com/askquote
  * Description: Request-a-quote system for WooCommerce stores. Customers can build a quote cart and submit quote requests.
- * Version: 0.1.0
+ * Version: 1.0.0
  * Author: Arun Rajiah
  * Author URI: https://hub.arunrajiah.com
  * License: GPL v2 or later
@@ -13,7 +13,7 @@
  * Requires at least: 6.2
  * Requires PHP: 7.4
  * WC requires at least: 7.0
- * WC tested up to: 8.5
+ * WC tested up to: 9.9
  *
  * @package AskQuote
  */
@@ -21,7 +21,7 @@
 defined( 'ABSPATH' ) || exit;
 
 // Plugin constants.
-define( 'ASKQUOTE_VERSION', '0.1.0' );
+define( 'ASKQUOTE_VERSION', '1.0.0' );
 define( 'ASKQUOTE_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'ASKQUOTE_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'ASKQUOTE_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
